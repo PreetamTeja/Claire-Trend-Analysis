@@ -1925,13 +1925,5 @@ app.index_string = '''
 '''
 
 if __name__ == "__main__":
-    print("Starting Claire - Fashion Trend Analysis with Enhanced Comprehensive Reports...")
-    print("Features:")
-    print("   • Fashion trend analysis (Overview page)")
-    print("   • State-wise analysis and fashion blog reports (Trends page)")  
-    print("   • Multi-timeframe comprehensive analysis (Reports page)")
-    print("   • Related keywords discovery and analysis")
-    print("   • Real-time data fetching with professional dashboard")
-    print("   • Regional insights for India")
-    print("Access at: http://127.0.0.1:8051")
-    app.run(debug=True, port=8051)
+    app.run_server(host="0.0.0.0", port=int(os.environ.get("PORT", 8050)))
+
